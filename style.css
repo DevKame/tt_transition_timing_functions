@@ -1,0 +1,50 @@
+
+.con {
+    width: 95%;
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 10px 0;
+}
+.con p {
+    margin-left: 10px;
+}
+.box-con {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: auto;
+    box-shadow: 0 0 15px 1px #111 inset;
+}
+.box-con:hover .box {
+    transform: translateX(210%);
+} 
+.box {
+    height: 80%;
+    aspect-ratio: 1;
+    border: 4px solid black;
+    background-color: firebrick;
+    transform: translateX(5px);
+    transition: all 1s;
+}
+.linear {
+    transition-timing-function: linear;
+}
+.ease {
+    transition-timing-function: ease;
+}
+.ease-in {
+    transition-timing-function: ease-in;
+}
+.ease-in-out {
+    transition-timing-function: ease-in-out;
+}
+.ease-out {
+    transition-timing-function: ease-out;
+}
+.steps {
+    transition-timing-function: steps(5);
+}
